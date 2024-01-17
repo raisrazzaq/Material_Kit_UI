@@ -1,0 +1,1 @@
+export {ReactComponent as CopySvg} from './copy.svg'
