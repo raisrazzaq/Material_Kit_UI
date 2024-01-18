@@ -1,28 +1,27 @@
-import { StyleSheet } from "react-native";
 import styled from "styled-components/native";
+import { BlurView } from 'expo-blur';
+import { StyleSheet } from "react-native";
 
-export const Header = styled.View`
-  width: 95%;
-  background-color: #ccced2;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-self: center;
-  border-radius: 7px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  padding: 12px;
-  margin-top: 20px;
-`;
+
+// export const Header = styled.View`
+//   width: 90%;
+//   background-color: rgba(204, 206, 210, 0.5);
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   align-self: center;
+//   border-radius: 7px;
+//   padding: 12px;
+//   position: absolute;
+//   top: 40px;
+//   z-index: 100;
+//   /* elevation:1; */
+// `;
 
 export const HeaderTitle = styled.Text`
   font-size: 20px;
   font-weight: 700;
-  color: rgb(52, 71, 103);
+  color: #344767;
 `;
 
 export const DownloadButton = styled.TouchableOpacity`
@@ -52,8 +51,7 @@ export const LeftWrapper = styled.View`
   gap: 10px;
 `;
 
-export const styles = StyleSheet.create({
-  safeAreaView: {
-    backgroundColor: "#fff",
-  },
-});
+export default styles=StyleSheet.create({
+
+
+})

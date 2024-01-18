@@ -3,10 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 const { height } = Dimensions.get("screen");
 
 export const Container = styled.View`
-  flex: 1;
   background-color: #f0f2f5;
-  margin-top: 30px;
-  position: relative;
 `;
 
 export const BgImage = styled.ImageBackground`
@@ -590,7 +587,8 @@ export const styles = StyleSheet.create({
   },
   arrow: {
     fontWeight: "bold",
-    marginTop: 10,
+    marginTop:50,
+    marginLeft:5,
   },
   flag: {
     marginTop: 15,

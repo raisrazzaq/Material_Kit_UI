@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import { SafeAreaView, ScrollView, TouchableOpacity, View } from "react-native";
 import MainBg from "../../assets/background.jpg";
 import Navbar from "../../components/Navbar";
 import laptop from "../../assets/laptop3.jpg";
@@ -17,7 +17,6 @@ import fb from "../../assets/FB.jpg";
 import github from "../../assets/github.jpg";
 import youtube from "../../assets/youtube.png";
 import X from "../../assets/twiterBW.png";
-
 import {
   Container,
   BgImage,
@@ -115,10 +114,10 @@ import {
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.safeAreaView}>
-      <ScrollView style={{ flex: 1 }}>
+      <Navbar />
+      <ScrollView style={{ flex: 1 }}  showsVerticalScrollIndicator={false}>
         <Container>
           <BgImage source={MainBg}>
-            <Navbar />
             <TextWrapper>
               <TitleHeading>Material Kit 2</TitleHeading>
               <TextDiscription>
@@ -385,15 +384,17 @@ const HomeScreen = () => {
                 Get inspiration and have an overview about the plugins that we
                 used to create the Material Kit.
               </Plugindescription>
-              <Arrowtext>
-                Read More
-                <Icon
-                  name="arrow-forward"
-                  size={30}
-                  color={"#257EEA"}
-                  style={styles.flag}
-                />
-              </Arrowtext>
+              <TouchableOpacity style={{ justifyContent: "flex-start" }}>
+                <Arrowtext>
+                  Read More
+                  <Icon
+                    name="arrow-forward"
+                    size={25}
+                    color={"#257EEA"}
+                    style={styles.arrow}
+                  />
+                </Arrowtext>
+              </TouchableOpacity>
             </PlugInCard>
             <PlugInCard>
               <Icon
